@@ -1,7 +1,7 @@
 import React from 'react'
 import { CaretDownIcon } from '../shared/Icons';
 
-const ActionSelect = ({ options, value, placeholder, onSelect }) => {
+export const ActionSelect = ({ options, value, placeholder, onSelect }) => {
   return (
     <div className="centered mb">
       <div className="select-wrapper">
@@ -14,5 +14,3 @@ const ActionSelect = ({ options, value, placeholder, onSelect }) => {
     </div>
   )
 }
-
-export default ActionSelect;

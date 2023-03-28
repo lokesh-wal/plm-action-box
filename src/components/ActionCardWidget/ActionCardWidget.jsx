@@ -6,7 +6,7 @@ import '../shared/styles.css';
 
 import { dummyData } from '../shared/dummyData';
 
-const ActionCardWidget = () => {
+export const ActionCardWidget = () => {
   const [isOpen, setOpen] = useState(false);
   const [currentData, setCurrentData] = useState(null);
 
@@ -56,5 +56,3 @@ const ActionCardWidget = () => {
     </>
   ) : <></>;
 };
-
-export default ActionCardWidget;

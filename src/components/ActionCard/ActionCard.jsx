@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { IdeaIcon, CloseIcon } from '../shared/Icons';
 import '../shared/styles.css';
-import ActionButton from './ActionButton';
-import ActionSelect from './ActionSelect';
+import { ActionButton } from './ActionButton';
+import { ActionSelect } from './ActionSelect';
 
-const ActionCard = ({ onClose, currentData, onNext }) => {
+export const ActionCard = ({ onClose, currentData, onNext }) => {
   const [cardData, setCardData] = useState({});
   const [selected, setSelected] = useState('');
 
@@ -87,5 +87,3 @@ const ActionCard = ({ onClose, currentData, onNext }) => {
     </div>
   );
 };
-
-export default ActionCard;

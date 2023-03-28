@@ -1,3 +1,1 @@
-import { ActionCardWidget } from "src/components/ActionCardWidget";
-
-export { ActionCardWidget };
+export * from "src/components/ActionCardWidget";

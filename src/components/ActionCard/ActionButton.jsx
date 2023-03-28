@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { ThumbDownIcon, ThumbUpIcon } from '../shared/Icons';
 
-const ActionButton = ({ value, onSelect }) => (
+export const ActionButton = ({ value, onSelect }) => (
   <div className="button-wrapper centered mb">
     <button onClick={() => onSelect("Y")} className={`button-yes ${value === 'Y' && 'selected'}`}>
       <ThumbUpIcon color={value === 'Y' ? '#ffffff' : '#81C216'} />&nbsp;&nbsp;Yes
@@ -11,5 +11,3 @@ const ActionButton = ({ value, onSelect }) => (
     </button>
   </div>
 );
-
-export default ActionButton;

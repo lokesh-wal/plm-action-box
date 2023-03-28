@@ -1,1 +1,1 @@
-export { default as ActionCardWidget } from './ActionCardWidget';
+export * from './ActionCardWidget';
